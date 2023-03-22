@@ -60,6 +60,7 @@ func App() *buffalo.App {
 
 		app.GET("/", HomeHandler)
 		app.GET("/skv", CustomHandler)
+		app.GET("/skv", SecondCustomHandler)
 	})
 
 	return app
